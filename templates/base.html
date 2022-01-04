@@ -8,15 +8,15 @@
     <meta charset="UTF=8">
     <title>CraigList Clone</title>
     <meta charset="UTF-8"/>
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-      <link rel = "stylesheet"
-         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel = "stylesheet"
-         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js">
-      </script>
-      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-      </script>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
 
 </head>
 <body>
@@ -24,20 +24,41 @@
     <div class="container nav-wrapper">
         <a href="/" class="brand-logo">CraigsList Clone</a>
         <ul id="nav-mobile" class="right">
-            <li><a href="/">Home</a> </li>
+            <li><a href="/">Home</a></li>
         </ul>
     </div>
 </nav>
+<div class="container"></div>
+    <h1 style="text-align: center">What do you want to search?</h1>
+    <div class="row">
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: #EE6E73">flash_on</i>
+                <p>Fast CraigList web scrapper</p>
+                <p class="light center">Scrape away right here with a kickass GUI</p>
+            </div>
+        </div>
 
-<h1 style="text-align: center">What do you want to search?</h1>
-<div class="row">
-    <div class="col s4">
-        <div class="center">
-            <i class="large material-icons" style="color: #EE6E73">flash_on</i>
-            <p>Fast CraigList web scrapper</p>
-            <p class="light center">Scrape away right here with a kickass GUI</p>
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color:orange">camera</i>
+                <p>Filter your searches</p>
+                <p class="light center">Get what you are particularly looking for</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: blue">chrome_reader_mode</i>
+                <p>Better UI with this app</p>
+                <p class="light center">Built with Django</p>
+            </div>
         </div>
     </div>
 </div>
+{% block content %}
+
+{% endblock content %}
+
 </body>
 </html>
